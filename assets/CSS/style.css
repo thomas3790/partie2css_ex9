@@ -3,6 +3,10 @@ body {
     font-size: smaller;
 }
 
+#puce {
+    list-style-type: none;
+}
+
 .margeBlue {
     background-color: rgb(37, 116, 169);
 }

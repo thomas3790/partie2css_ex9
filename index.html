@@ -41,12 +41,14 @@
         <form method="post"></form>
             <ol>
                 <li><label for="payment">Type de carte bancaire :</label><br>
+                
+                <ul id="puce">
+                    <li><input type="radio" name="visa" value="VISA">
+                    <label for="visa">VISA</label></li>
 
-                <input type="radio" name="visa" value="VISA">
-                <label for="visa">VISA</label><br>
-
-                <input type="radio" name="mastercard" value="Mastercard">
-                <label for="mastercard">Mastercard</label></li>
+                    <li><input type="radio" name="mastercard" value="Mastercard">
+                    <label for="mastercard">Mastercard</label></li>
+                </ul>
 
                 <li><label for="card">Numéro de carte :</label>
                 <input type="text" name="card" id="card" placeholder="Numéro de carte"></li>
