@@ -1,0 +1,29 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: smaller;
+}
+
+.margeBlue {
+    background-color: rgb(37, 116, 169);
+}
+
+.margePurple {
+    background-color: rgb(154, 18, 179);
+}
+
+.margeRed {
+    background-color: rgb(219, 10, 91);
+}
+
+.blue {
+    background-color: rgb(37, 116, 169);   
+}
+
+.purple {
+    background-color: rgb(154, 18, 179);
+}
+
+.red {
+    background-color: rgb(219, 10, 91);
+}
+
