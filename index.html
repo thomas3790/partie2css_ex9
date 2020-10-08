@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/CSS/style.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
+
 <body>
-    <fieldset class="blue">
-        <legend><span class="margeBlue">Votre identité</span></legend>
-        <form method="POST" >
+    <form method="POST" action="#">
+        <fieldset class="blue">
+            <legend>Votre identité</legend>
             <ol>
-                <li><label for="Nom">Nom :</label>
-                <input type="text" name="Nom" id="Nom" placeholder="Nom"></li>
+                <li><label for="lastname">Nom :</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Nom"></li>
 
-                <li><label for="Prenom">Prénom :</label>
-                <input type="text" name="Prenom" id="Prenom" placeholder="Prénom"></li>
+                <li><label for="firstname">Prénom :</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Prénom"></li>
 
-                <li><label for="Mail">Adresse mail :</label>
-                <input type="text" name="Mail" id="Mail" placeholder="Adresse mail"></li>
-            </ol>
-        </form>
-    </fieldset>
-
-    <fieldset class="purple">
-        <legend><span class="margePurple">Adresse de livraison</span></legend>
-        <form method="post"></form>
-            <ol>
-                <li><label for="Adresse">Adresse :</label><textarea name="Adresse" id="Adresse" cols="30" rows="5"></textarea></li>
-
-                <li><label for="cp">Code postal :</label><input type="text" name="cp" id="cp" maxlength="10" placeholder="Code postal"></li>
-
-                <li><label for="ville">Ville :</label>
-                <input type="text" name="ville" id="ville" placeholder="Ville"></li>
+                <li><label for="mail">Adresse mail :</label>
+                    <input type="email" name="mail" id="mail" placeholder="Adresse mail"></li>
             </ol>
         </fieldset>
 
-    <fieldset class="red">
-        <legend><span class="margeRed">Informations de réglement</span></legend>
-        <form method="post"></form>
+        <fieldset class="purple">
+            <legend>Adresse de livraison</legend>
             <ol>
-                <li><label for="payment">Type de carte bancaire :</label><br>
-                
-                <ul id="puce">
-                    <li><input type="radio" name="visa" value="VISA">
-                    <label for="visa">VISA</label></li>
+                <li><label for="adress">Adresse :</label><textarea name="adress" id="adress" cols="30"
+                        rows="5"></textarea>
+                </li>
 
-                    <li><input type="radio" name="mastercard" value="Mastercard">
-                    <label for="mastercard">Mastercard</label></li>
-                </ul>
+                <li><label for="cp">Code postal :</label><input type="text" name="cp" id="cp" maxlength="10"
+                        placeholder="Code postal"></li>
+
+                <li><label for="city">Ville :</label>
+                    <input type="text" name="city" id="city" placeholder="Ville"></li>
+            </ol>
+        </fieldset>
+
+        <fieldset class="red">
+            <legend>Informations de réglement</legend>
+            <ol>
+                <li>
+                    <label>Type de carte bancaire :
+
+                        <ul id="puce">
+                            <li><input type="radio" name="visa" value="VISA">
+                                <label for="visa">VISA</label></li>
+
+                            <li><input type="radio" name="visa" value="Mastercard">
+                                <label for="mastercard">Mastercard</label></li>
+                        </ul>
+                </li>
+                </label>
 
                 <li><label for="card">Numéro de carte :</label>
-                <input type="text" name="card" id="card" placeholder="Numéro de carte"></li>
+                    <input type="text" name="card" id="card" placeholder="Numéro de carte"></li>
 
                 <li><label for="code">Code de sécurité :</label>
-                <input type="text" name="code" id="code" placeholder="Code de sécurité"></li>
+                    <input type="text" name="code" id="code" placeholder="Code de sécurité"></li>
 
                 <li><label for="titu">Nom du titulaire :</label>
-                <input type="text" name="titu" id="titu" placeholder="Nom du titulaire"></li>
+                    <input type="text" name="titu" id="titu" placeholder="Nom du titulaire"></li>
 
             </ol>
-    </fieldset>
+        </fieldset>
 
-    <input type="submit" value="J'achète !">
+        <input type="submit" name="button" value="J'achète !">
+    </form>
 </body>
+
 </html>
